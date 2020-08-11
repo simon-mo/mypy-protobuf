@@ -12,5 +12,6 @@ proto_plugin(
     name = "mypy_protobuf_plugin",
     outputs = ["{protopath}_pb2.pyi"],
     tool = "mypy_protobuf",
+    options = ["quiet"],
     visibility = ["//visibility:public"],
 )
